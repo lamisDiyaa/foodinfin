@@ -1,0 +1,72 @@
+:root {
+  --main-color: #b14b08;
+  --white-color: #fff;
+  --bg-color: #0e0d0a;
+  --body-color: #9b9999;
+  --primary-font: "Oswald", sans-serif;
+  --main-font: "Cormorant Garamond", serif;
+}
+/* start sign up */
+.sign__up {
+  padding: 2rem 0.5rem;
+}
+.signUp__form {
+  padding: 4.5rem 1rem;
+}
+.signUp__bg {
+  background-image: url(../images/alaksiej-carankievic-JBDYs80RTcs-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+label {
+  color: var(--white-color);
+  font-size: 2.2rem;
+  padding: 1.1rem 0;
+  font-family: var(--main-font);
+}
+input {
+  height: 5.3rem;
+  margin-bottom: 1.2rem;
+}
+.sign__btn {
+  background-color: var(--main-color);
+  text-transform: capitalize;
+  padding: 15px 20px !important;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: var(--white-color);
+  border: none;
+  font-family: var(--primary-font);
+  margin-top: 2.8rem;
+}
+
+/* end sign up */
+
+/* start sign in */
+.log__in {
+  background-image: url(../images/dani-rendina-2BAssZOi7fQ-unsplash.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.form__in {
+  display: flex;
+  justify-content: center;
+  background-color: #22222769;
+  padding: 4rem;
+  background-size: cover;
+  background-position: top;
+}
+.login__msg {
+  background-image: url(../images/bg/uup.jfif);
+  background-position: center;
+  background-size: cover;
+  color: var(--white-color);
+}
+
+/* end sign in */

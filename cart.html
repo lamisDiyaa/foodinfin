@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css" />
+    <!-- google font Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- wow link -->
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <!-- google font icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- styling link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+
+    <title>foodinfin</title>
+  </head>
+  <body>
+    <!-- start nav section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">foodinfin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./res.html">reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./privateOrders.html">Private Dining</a>
+            </li>
+          </ul>
+          <div class="right__sec__nav">
+            <p class="userNameTitle"></p>
+            <button class="btn">
+              <a href="./cart.html">your cart</a>
+              <span class="material-symbols-outlined"> shopping_cart </span>
+              <span class="cart__badge">1</span>
+            </button>
+            <button class="login__btn btn">
+              <a href=""></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav section -->
+
+    <!-- start display section -->
+    <section class="display mt-5">
+      <div class="container-md">
+        <div class="row mt-5">
+          <div class="col-xl-9 col-md-12">
+            <div class="table-responsive mt-5 p-3">
+              <table class="table table-bordered">
+                <thead>
+                  <th></th>
+                  <th>name</th>
+                  <th>PRICE</th>
+                  <th>QUANTITY</th>
+                  <th>SUBTOTAL</th>
+                </thead>
+                <tbody class="menu"></tbody>
+                <tfoot>
+                  <tr>
+                    <td>total price</td>
+                    <td class="tfoot" colspan="4"></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="col-xl-3 mini__cart mt-5 p-3">
+            <div class="order__summary">
+              <h5 class="mt-5 p-3">order summary</h5>
+            </div>
+            <div
+              class="sub__total d-flex justify-content-between align-items-center p-3"
+            >
+              <p class="sub__total__txt">subtotal</p>
+              <p class="sub__total__price"></p>
+            </div>
+            <div
+              class="taxes d-flex justify-content-between align-items-center p-3"
+            >
+              <p class="taxes__txt">taxes</p>
+              <p class="taxes__price"></p>
+            </div>
+            <div
+              class="shipping d-flex justify-content-between align-items-center p-3"
+            >
+              <p class="shipping__txt">shipping</p>
+              <p class="shipping__price">200EGP</p>
+            </div>
+            <div
+              class="total__price__taxes d-flex justify-content-between align-items-center p-3"
+            >
+              <p class="total__price__txt">total</p>
+              <p class="total__price__price">200EGP</p>
+            </div>
+            <div
+              class="cart__checkout d-flex justify-content-center align-items-center p-3"
+            >
+              <button class="btn checkOut__btn">
+                <a href="./checkout.html">check out</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 pt-5">
+          <div class="col-md-8">
+            <div class="row"></div>
+          </div>
+          <div class="col-md-8"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start display section -->
+
+    <!-- start foodinfin  place  -->
+    <section class="foodinfin__place mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="header-intro foodinfin__place__bg">
+            <!-- <span class="tit2 p-l-15 p-r-15"> Discover </span> -->
+            <h5>foodinfin</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end  foodinfin  place-->
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+
+    <script src="./assets/js/cartTest.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--google font Work Sans -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+       rel="stylesheet"
+     />
+      <!-- google font Oswald -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css" />
+        <!-- styling link -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/signUp.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sign__up">
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-lg-5 signUp__form">
+                    <form id="signup-form">
+                        <label  for="name" class="form-label">Name:</label>
+                        <input type="text"class="form-control name" id="name" id="name" placeholder="Enter your name" required>
+
+                        <label for="email" class="form-label">Email address:</label>
+                        <input type="email"class="form-control email" id="email" placeholder="Enter your email address" required>
+
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password"class="form-control password" id="password__signUp" placeholder="Enter your password" required>
+
+                        <label for="confirm-password" class="form-label">Confirm password:</label>
+                        <input type="password"class="form-control confirmPassword" id="confirm-password" placeholder="Confirm your password" required>
+                        <div class="signUp__btn text-center">
+                            <button type="submit" class=" btn sign__btn">Sign up</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="col-md-6 col-lg-5 signUp__bg">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="overlay d__flex d-none">
+            <div class="msg__container d__flex login__msg">
+              <p>this user name already exist</p>
+          
+              <div class="btns__container">
+                <!-- <button class="btn">
+                  <a href="./signup.html">signup</a>
+                </button> -->
+                <button class="btn close__reservtion__btn" >
+                  close
+                </button>
+              </div>
+          
+            </div>
+          </div>
+    </section>
+    <script src="./assets/js/vendor/bootstrap.min.js" ></script>
+    <script src="./assets/js/vendor/popper.min.js" ></script>
+    <script src="./assets/js/signup.js"></script>
+</body>
+</html>

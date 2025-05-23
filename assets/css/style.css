@@ -1,0 +1,1108 @@
+/* Start Variables */
+:root {
+  --main-color: #b14b08;
+  /* --main-color: #C0A37B; */
+  /* #DD5903  #ac7221*/
+  --white-color: #fff;
+  --bg-color: #0e0d0a;
+  --body-color: #9b9999;
+  --section-padding: 70px;
+  --primary-font: "Oswald", sans-serif;
+  --main-font: "Cormorant Garamond", serif;
+  --header-font: "Great Vibes", cursive;
+  /* font-family: 'Work Sans', sans-serif; */
+  /* font-family: 'Cormorant Garamond', serif; */
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+body {
+  font-family: var(--main-font);
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--body-color);
+  overflow-x: hidden;
+}
+
+/* start  global rules */
+html {
+  font-size: 10px;
+}
+
+/* End Global Rules */
+/* start global component */
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+a::selection,
+button::selection,
+span::selection {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+.d__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: fixed;
+  background-color: #222227d3;
+  inset: 0;
+  z-index: 5;
+}
+.msg__container {
+  width: 35%;
+  height: 350px;
+
+  font-size: 4rem;
+  font-family: var(--primary-font);
+  flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+}
+.msg__container::after {
+  content: " ";
+  background-color: #0e0d0a71;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.reservation__msg {
+  background-image: url(../images/bg/mih.jfif);
+  color: var(--white-color);
+  background-position: top;
+  background-size: cover;
+}
+.btns__container button {
+  background-color: transparent;
+  color: var(--white-color);
+}
+.btns__container a {
+  color: var(--white-color);
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-9%);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes RightToleft {
+  0% {
+    transform: translateX(25%);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 0.8;
+  }
+}
+@keyframes top {
+  0% {
+    transform: rotateX(90);
+    opacity: 0.1;
+  }
+  100% {
+    transform: rotateX(180deg);
+    opacity: 1;
+  }
+}
+
+/* end global component */
+
+/* start header */
+
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: transparent;
+  z-index: 9;
+  padding: 1.8rem 0;
+  left: 0;
+  right: 0;
+}
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: var(--white-color) !important;
+  font-weight: 500 !important;
+}
+
+.navbar-nav .nav-item {
+  padding: 0 15px;
+}
+.navbar-nav .nav-link {
+  color: aliceblue !important;
+  font-size: 1.8rem;
+  font-family: var(--primary-font) !important;
+
+  /* font-family: 'Nunito', sans-serif; */
+}
+.right__sec__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.userNameTitle {
+  font-size: 2.8rem;
+  font-family: var(--primary-font);
+  color: var(--main-color);
+  /* font-style: italic; */
+}
+.navbar .btn {
+  background-color: var(--main-color);
+  padding: 15px 20px !important;
+  position: relative;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+.navbar .btn a {
+  color: var(--white-color);
+
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.cart__badge {
+  position: absolute;
+  top: 3px;
+  right: 1.4rem;
+  font-size: 1.4rem;
+  /* background-color: var(--white-color); */
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.navbar .btn .material-symbols-outlined {
+  font-size: 2rem;
+  color: #fff;
+}
+.login__circle {
+  background-color: var(--main-color);
+}
+
+/* end header */
+/* start main section  */
+.main__section {
+  height: 115vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -76.5px;
+  /* inset: 0; */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.main {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.main__home {
+  background-image: url(../images/benefits-carousel-1.jpg);
+}
+.main__section::after,
+.main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a39;
+  z-index: 2;
+}
+
+.h1 {
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 8rem;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.main__p {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 6rem;
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 500;
+}
+.main__btns {
+  margin-top: 3rem;
+  text-align: center;
+}
+.btn {
+  padding: 15px 20px !important;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  cursor: pointer !important;
+}
+.reserve__btn {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: 2px solid var(--main-color);
+  transition: all 0.3s;
+  /* cursor: pointer !important; */
+}
+.reserve__btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+.main__btns .menu__btn {
+  background-color: transparent;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  margin-left: 1rem;
+  transition: all 0.3s;
+}
+.main__btns a {
+  color: var(--white-color);
+}
+.main__btns .menu__btn:hover {
+  background-color: var(--white-color);
+  color: var(--main-color);
+  border: 2px solid var(--white-color);
+}
+
+/* end main section  */
+/* start our history section  */
+.our__history {
+  padding: 4rem 0;
+}
+.our__history__txt {
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primary-font);
+}
+.our__history__txt span {
+  color: var(--main-color);
+  font-family: var(--header-font);
+  font-size: 5rem;
+}
+/* end our history section  */
+
+/* start our services */
+.our__services {
+  text-align: center;
+  padding: 4rem 0;
+  margin: 3rem 0;
+}
+.services__card {
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+}
+.our__services__h2 {
+  padding: 2.5rem 0;
+  font-size: 6rem;
+  margin-top: 3rem;
+  font-family: var(--header-font);
+  color: var(--main-color);
+}
+.services__icons span {
+  color: var(--main-color);
+  font-size: 7rem;
+  padding: 2rem 0;
+}
+.our__services__h3 {
+  font-family: var(--main-font);
+  font-size: 3rem;
+
+  color: #c9c5c5;
+}
+.our__services__p {
+  font-size: 2rem;
+}
+
+/* end our services */
+
+/* start selected menu */
+.selected__menu {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+.selected__menu__bg {
+  background-image: url(../images/jesse-ballantyne-9r5kHbw51fk-unsplash-1.jpg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 0;
+  position: relative;
+  z-index: 1;
+}
+.selected__menu__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a3a;
+  z-index: -1;
+}
+.lunch__special__left {
+  transform: translateX(-9%);
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.lunch__special__right {
+  transform: translateX(25%);
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.menu__card {
+  margin: 2rem 0;
+  margin-top: 4rem;
+  background-color: #0e0d0a91;
+  border: 2px solid var(--white-color);
+}
+.menu__card h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  color: var(--white-color);
+}
+
+.menu__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 2rem;
+  margin: 0 1rem;
+}
+.menu__txt,
+.menu__price {
+  font-size: 2.2rem;
+  color: var(--white-color);
+}
+.menu__line {
+  width: 20%;
+  height: 0.5px;
+  background-color: var(--body-color);
+}
+
+.menu__right__side {
+  background-color: #ac7221;
+  height: 100vh;
+}
+/* end selected menu */
+
+/* start all menu */
+.all__menu {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+.all__menu__card {
+  position: relative;
+}
+.all__menu__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a79;
+  z-index: 1;
+}
+.all__menu__card img {
+  z-index: -1;
+}
+.all__menu__card__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.all__menu__header {
+  color: var(--main-color);
+  text-align: center;
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.all__menu__header::after {
+  content: "";
+  width: 15%;
+  position: absolute;
+  background-color: var(--main-color);
+  height: 1.2px;
+
+  top: 50%;
+  right: 62.5%;
+}
+.all__menu__header::before {
+  content: "";
+  width: 15%;
+  position: absolute;
+  background-color: var(--main-color);
+  height: 1.2px;
+
+  top: 50%;
+  right: 22.5%;
+}
+.full__menus {
+  font-size: 4.8rem;
+  font-family: var(--main-font);
+  color: var(--white-color);
+  text-align: center;
+  line-height: 6rem;
+}
+.full__menus__description {
+  color: var(--white-color);
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.menus__btn {
+  color: var(--white-color);
+  background-color: transparent;
+  text-decoration: none;
+  position: relative;
+  transition: all 1s;
+}
+.menus__btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--main-color);
+  width: 0;
+  left: 0;
+  height: 2px;
+  top: -10p;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.menus__btn:hover::after {
+  width: 100%;
+}
+.menus__btn:hover {
+  color: var(--white-color) !important;
+}
+/* end all menu */
+
+/* start filltered menus */
+.filtered__menus {
+  margin: 4rem 0;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.steak__card__container {
+  display: flex;
+  justify-content: left;
+}
+.asian__card__container {
+  display: flex;
+  justify-content: center;
+}
+.desserts__card__container {
+  display: flex;
+  justify-content: right;
+}
+.filtered__cards {
+  width: 75%;
+  border-radius: 5px;
+  border: 0.3px solid var(--bg-color);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  transition: all 1s;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: right;
+}
+.filtered__cards::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--bg-color);
+  inset: 0;
+  opacity: 0.3;
+  transition: all 1s;
+}
+.filtered__cards:hover {
+  transform: translateY(-15px);
+}
+.filtered__cards:hover::after {
+  opacity: 0.5;
+}
+.steak__card {
+  background-image: url(../images/steakhouse-img-2-370x559.jpg);
+  position: relative;
+}
+.steak__card::before {
+  content: "steak menu";
+
+  position: absolute;
+  transform: rotate(-0.25turn);
+  left: -38%;
+  color: var(--white-color);
+  font-size: 4rem;
+  top: 40%;
+  transition: all 1s;
+}
+.steak__card:hover::before {
+  opacity: 1;
+}
+.asian__card {
+  background-image: url(../images/steakhouse-img-3-370x559.jpg);
+  position: relative;
+}
+.asian__card::before {
+  content: "asian menu";
+  position: absolute;
+  transform: rotate(-0.25turn);
+  left: -38%;
+  color: var(--white-color);
+  font-size: 4rem;
+  top: 40%;
+  /* text-transform: capitalize; */
+}
+.desserts__card {
+  background-image: url(../images/steakhouse-img-5-370x559.jpg);
+
+  position: relative;
+  text-align: end;
+}
+.desserts__card::before {
+  content: "desserts menu";
+  position: absolute;
+  transform: rotate(-0.25turn);
+  left: -44%;
+
+  color: var(--white-color);
+  font-size: 4rem;
+  top: 40%;
+}
+
+/* end filltered menus */
+
+/* start happy customers */
+
+.happy__customers {
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+.happy__customer__bg {
+  background-image: url(../images/george-kedenburg-iii-jso_yKod6-c-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+.happy__customer__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a94;
+  z-index: 1;
+}
+.happy__customr__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.customers {
+  color: var(--white-color);
+  z-index: 2;
+}
+.happy__customr__card span {
+  font-size: 6rem;
+}
+.customer__numbers {
+  font-size: 5rem;
+}
+.customer__status {
+  font-size: 2rem;
+}
+/* end happy customers */
+/* start OPENING HOURS */
+.reservation__parking__opening__Hours {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--main-color);
+  padding: 3.5rem 0;
+}
+.reservation__parking__opening__Hours h4 {
+  color: var(--main-color);
+  font-size: 2.4rem;
+  padding-top: 2.2rem;
+  padding: 1.5rem 0;
+}
+.reservation__parking__opening__Hours p {
+  color: var(--white-color);
+  font-size: 1.8rem;
+}
+.all__details__imgs {
+  background-image: url(../images/klara-kulikova-lZm_VDhGGW8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* end OPENING HOURS */
+/* start find us */
+.find__us {
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+.find__us__img {
+  background-image: url(../images/image_3.jpg);
+  /* height: 100vh; */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.find__us__img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a27;
+  z-index: 1;
+}
+.find__us__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  margin: 3rem 0;
+}
+.find__us_title {
+  color: var(--white-color);
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.where {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.address {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  text-align: center;
+}
+.find__us__btns {
+  margin: 2rem 0;
+}
+
+.viewMap__btn a {
+  color: #000;
+  background-color: var(--white-color);
+  padding: 0.6rem 2.8rem;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+.bookTable__btn a {
+  color: var(--white-color);
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  padding: 0.6rem 2.8rem;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+/* end find us */
+
+/* start foodinfin  place */
+
+.foodinfin__place {
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+.foodinfin__place__bg {
+  background-image: url(../images/paralax.jpg);
+}
+.header-intro {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a88;
+  z-index: -1;
+}
+.foodinfin__place h5,
+.header-intro h5 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 3rem;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  /* color: white; */
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 6px;
+  z-index: 3;
+}
+
+/* end foodinfin  place */
+.border__b {
+  border-bottom: 1px solid var(--main-color);
+}
+.menu img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.menu__title {
+  text-align: center;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  padding: 3rem 0;
+  font-family: var(--main-font);
+  font-size: 3rem;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
+.menu__des {
+  padding: 3rem;
+}
+.food__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__content {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.food__description p {
+  font-size: 1.4rem;
+  color: var(--white-color);
+}
+.footer-p {
+  color: #a9a9a9;
+  font-size: 2rem;
+  text-align: center;
+}
+.final-footer {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+.footer-logo {
+  text-align: center;
+}
+.footer-logo img {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .steak__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+  .asian__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+
+  .desserts__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-toggler {
+    color: #fff !important;
+    background-color: #fff !important;
+  }
+  .full__menus {
+    font-size: 3.2rem;
+
+    /* line-height: rem; */
+  }
+  .all__menu__header::after {
+    right: 72.5%;
+  }
+  .all__menu__header::before {
+    right: 12.5%;
+  }
+  .full__menus__description {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+  .filtered__cards {
+    width: 100%;
+  }
+  .steak__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+  .asian__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+
+  .desserts__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+  .all__details__txts {
+    padding: 0 3rem;
+  }
+  .menu__txt,
+  .menu__price {
+    font-size: 1.8rem;
+    color: var(--white-color);
+  }
+  .menu__card h3 {
+    font-size: 2.4rem;
+  }
+  .menu__line {
+    width: 12%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full__menus {
+    font-size: 4.2rem;
+  }
+  .all__menu__header::after {
+    right: 58.5%;
+  }
+  .all__menu__header::before {
+    right: 26%;
+  }
+  .full__menus__description {
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 3.8rem;
+  }
+  .all__menu__card__txt {
+    margin: 4rem 0;
+    padding: 4rem 0;
+  }
+  .filtered__cards {
+    width: 50%;
+  }
+  .steak__card__container {
+    display: flex;
+    justify-content: center;
+  }
+  .asian__card__container {
+    display: flex;
+    justify-content: center;
+  }
+  .desserts__card__container {
+    display: flex;
+    justify-content: center;
+  }
+  .steak__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3.8rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+  .asian__card::before {
+    content: "asian menu";
+    transform: rotate(0);
+    font-size: 3.8rem;
+    bottom: 50%;
+    left: 22.5%;
+    top: 100%;
+  }
+
+  .desserts__card::before {
+    content: "desserts menu";
+    transform: rotate(0);
+    font-size: 3.8rem;
+    bottom: 50%;
+    left: 22%;
+    top: 100%;
+  }
+  .menu__txt,
+  .menu__price {
+    font-size: 2.8rem;
+    color: var(--white-color);
+  }
+  .menu__card h3 {
+    font-size: 3.4rem;
+  }
+  .menu__line {
+    width: 20%;
+  }
+  .menu__div {
+    justify-content: space-around;
+  }
+}
+/* @media only screen and (max-width: 576px) */
+@media only screen and (max-width: 576px) {
+  .main__p {
+    font-size: 4rem;
+  }
+
+  .navbar-brand {
+    font-size: 2.5rem !important;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .our__history__txt {
+    font-size: 2rem;
+  }
+  .menu__card h3 {
+    font-size: 2.5rem;
+  }
+  .menu__div .menu__txt {
+    font-size: 2rem;
+  }
+  .full__menus {
+    font-size: 3rem;
+  }
+  .reservation__parking__opening__Hours {
+    flex-direction: column;
+  }
+  .find__us_title {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 4rem;
+  }
+  .footer-logo img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .steak__card::before {
+    content: "steak menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 20%;
+    top: 100%;
+  }
+  .asian__card::before {
+    content: "asian menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 20%;
+    top: 100%;
+  }
+
+  .desserts__card::before {
+    content: "desserts menu";
+    transform: rotate(0);
+    font-size: 3rem;
+    bottom: 50%;
+    left: 16%;
+    top: 100%;
+  }
+  .happy__customers {
+    display: none;
+  }
+}

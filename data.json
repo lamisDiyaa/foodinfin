@@ -1,0 +1,279 @@
+[
+  {
+    "id": 7,
+    "category": "steak",
+    "name": "Roasted Steak",
+    "price": 29,
+    "description": "A small river named Duden flows by their place and supplies",
+    "img": "./assets/images/menu/牛排.jfif",
+    "lazyImg": "./assets/images/lazy/sure/jpeg-optimizer_牛排.jfif"
+  },
+  {
+    "id": 8,
+    "category": "steak",
+    "name": "Prickly Pear Tonic",
+    "price": 20,
+    "description": "Prickly Pear, Chancaca, Key Lime, and Tonic Duden flows river",
+    "img": "./assets/images/menu/GrilledFlankSteak.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/GrilledFlankSteak.jpg"
+  },
+
+  {
+    "id": 3,
+    "category": "steak",
+    "name": "New York Sirloin",
+    "price": 59,
+    "description": "Avocado, Black Tobiko, Truffle Hot Sauce Aioli",
+    "img": "./assets/images/menu/Barbecuegrilledbeefsteakmeat.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/Barbecuegrilledbeefsteakmeat.jpg"
+  },
+  {
+    "id": 4,
+    "category": "steak",
+    "name": "American Prime",
+    "price": 115,
+    "description": "12oz. 28 Days. Barrel Cut File Truffle Hot Sauce Aioli",
+    "img": "./assets/images/menu/ChoppedSaladwithGrilledSteak.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/ChoppedSaladwithGrilledSteak.jpg"
+  },
+  {
+    "id": 5,
+    "category": "steak",
+    "name": "Prime Porterhouse",
+    "price": 88,
+    "description": "24 oz. Erin, Ontario",
+    "img": "./assets/images/menu/50StunningFood.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/50StunningFood.jpg"
+  },
+  {
+    "id": 6,
+    "category": "steak",
+    "name": "Grilled Beef ",
+    "price": 69,
+    "description": "Meat, Potatoes, Rice",
+    "img": "./assets/images/menu/GrilledTomahawkSteaks.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/GrilledTomahawkSteaks.jpg"
+  },
+
+  {
+    "id": 1,
+    "category": "steak",
+    "name": "Bone-in Centre",
+    "price": 108,
+    "description": "Ginger. Green Bay, Prince Edward  Island",
+    "img": "./assets/images/menu/cardiffcrackrecipe.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/cardiffcrackrecipe.jpg"
+  },
+
+  {
+    "id": 2,
+    "category": "steak",
+    "name": "Filet Mignon",
+    "price": 59,
+    "description": "Oysters, Clams, Lobster, Shrimp Ginger oil",
+    "img": "./assets/images/menu/steakWithEgg.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/steakWithEgg.jpg"
+  },
+
+  {
+    "id": 9,
+    "category": "steak",
+    "name": "Chicha Morada",
+    "price": 35,
+    "description": "Purple Corn, Pineapple, Apple, Cinnamon, and Clove",
+    "img": "./assets/images/menu/beef.jfif",
+    "lazyImg": "./assets/images/lazy/sure/beef.jfif"
+  },
+  {
+    "id": 10,
+    "category": "steak",
+    "name": "Better Boy",
+    "price": 29,
+    "description": "Tomato, Salt, Black Pepper, Lemon, Worcestershire and Clove ",
+    "img": "./assets/images/menu/meat.jfif",
+    "lazyImg": "./assets/images/lazy/sure/meat.jpg"
+  },
+  {
+    "id": 11,
+    "category": "asian",
+    "name": "Blackened Fish ",
+    "price": 24,
+    "description": "Crunchy cabbage, wild baby arugula, tomato, on a brioche bun",
+    "img": "./assets/images/menu/gallery-img-1-1.jpg",
+    "lazyImg": "./assets/images/lazy/sure/salad.jpg"
+  },
+  {
+    "id": 12,
+    "category": "asian",
+    "name": "Hong Tao Tao",
+    "price": 48,
+    "description": "Peachy flavor, goes well with desser  house made tartar sauce,",
+    "img": "./assets/images/menu/gallery1.jpg",
+    "lazyImg": "./assets/images/lazy/sure/gallery1.jpg"
+  },
+  {
+    "id": 13,
+    "category": "asian",
+    "name": " Orange Chicken",
+    "price": 26,
+    "description": "Steamed bok choy tartare, lemon",
+    "img": "./assets/images/menu/koreaanChicken.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/koreaanChicken.jpg"
+  },
+  {
+    "id": 14,
+    "category": "asian",
+    "name": "Salmon Gunkan",
+    "price": 108,
+    "description": "Atlantic cod fillet, chips, salad, ",
+    "img": "./assets/images/menu/seafood.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/seafood.jpg"
+  },
+  {
+    "id": 15,
+    "category": "asian",
+    "name": "Flank Steak",
+    "price": 78,
+    "description": "Truffle mash, charred baby cos, pico de gallo, pepper sauce",
+    "img": "./assets/images/menu/EasyAsianChicken.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/EasyAsianChicken.jpg"
+  },
+  {
+    "id": 16,
+    "category": "asian",
+    "name": "Beef Nigiri",
+    "price": 52,
+    "description": "Whole fish, sweet chilli sauce, Vietnamese herbs spices ",
+    "img": "./assets/images/menu/SpicyNoodles.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/SpicyNoodles.jpg"
+  },
+  {
+    "id": 17,
+    "category": "asian",
+    "name": "Sesame Gunkan",
+    "price": 66,
+    "description": "Chinese eggplant, sweet chili soy glaze, green onion, pineapple, ginger",
+    "img": "./assets/images/menu/chrimp.png",
+    "lazyImg": "./assets/images/lazy/sure/chrimp.jpg"
+  },
+  {
+    "id": 18,
+    "category": "asian",
+    "name": "Gunkan Chicken",
+    "price": 88,
+    "description": "Steamed bok choy , roasted cashews ,eggplant, house made tartar sauce",
+    "img": "./assets/images/menu/food-4.jpg",
+    "lazyImg": "./assets/images/lazy/sure/food-4.jpg"
+  },
+  {
+    "id": 19,
+    "category": "asian",
+    "name": "Charred Seabass",
+    "price": 67,
+    "description": "Orange glazed chicory, saffron rice, pepper sauce",
+    "img": "./assets/images/menu/SpicyNoodlees.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/SpicyNoodlees.jpg"
+  },
+  {
+    "id": 20,
+    "category": "asian",
+    "name": " Market chiken",
+    "price": 108,
+    "description": " sweet chilli sauce, Vietnamese herbs and spices",
+    "img": "./assets/images/menu/koreanFried.png",
+    "lazyImg": "./assets/images/lazy/sure/koreanFried.jpg"
+  },
+
+  {
+    "id": 22,
+    "category": "dessert",
+    "name": "Caramel Tart",
+    "price": 16,
+    "description": "Salted caramel custard tart, vanilla ice-cream, almond biscuit",
+    "img": "./assets/images/menu/dessert-2.jpg",
+    "lazyImg": "./assets/images/lazy/sure/dessert-2.jpg"
+  },
+  {
+    "id": 23,
+    "category": "dessert",
+    "name": "Red Cheese Mousse",
+    "price": 18,
+    "description": "Cheese mousse, hazelnut & chocolate snow, strawberry, lemon gel",
+    "img": "./assets/images/menu/BestRedVelvet.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/BestRedVelvet.jpg"
+  },
+  {
+    "id": 24,
+    "category": "dessert",
+    "name": "Warm fruit Cake",
+    "price": 20,
+    "description": "fruit, sorbet, brown butter, puff pastry custard mousse tart",
+    "img": "./assets/images/menu/fruitCake.jfif",
+    "lazyImg": "./assets/images/lazy/sure/fruitCake.jpg"
+  },
+  {
+    "id": 28,
+    "category": "dessert",
+    "name": "colored Cheese",
+    "price": 28,
+    "description": " cheesecake mousse, vanilla ice-cream",
+    "img": "./assets/images/menu/DeliciousBlueberry.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/DeliciousBlueberry.jpg"
+  },
+
+  {
+    "id": 26,
+    "category": "dessert",
+    "name": "strawberry pancake",
+    "price": 25,
+    "description": "pancake, sorbet, brown butter",
+    "img": "./assets/images/menu/dessert-7.jpg",
+    "lazyImg": "./assets/images/lazy/sure/jpeg-optimizer_dessert-7.jpg"
+  },
+  {
+    "id": 27,
+    "category": "dessert",
+    "name": "chocolate waffle",
+    "price": 35,
+    "description": "chocolate waffle,  chocolate snow, strawberry",
+    "img": "./assets/images/menu/Oreo Cheesecake Waffles.jfif",
+    "lazyImg": "./assets/images/lazy/sure/OreoCheesecakeWaffles.jpg"
+  },
+  {
+    "id": 25,
+    "category": "dessert",
+    "name": "Classic Tiramisù",
+    "price": 23,
+    "description": "Espresso-soaked ladyfingers, whipped cream .",
+    "img": "./assets/images/menu/Bolo Tiramisù.jfif",
+    "lazyImg": "./assets/images/lazy/sure/BoloTiramisù.jfif"
+  },
+
+  {
+    "id": 29,
+    "category": "dessert",
+    "name": "milky strawberry",
+    "price": 40,
+    "description": "caramel custard , vanilla ice-cream, cherry",
+    "img": "./assets/images/menu/dessert-3.jpg",
+    "lazyImg": "./assets/images/lazy/sure/dessert-3.jpg"
+  },
+  {
+    "id": 30,
+    "category": "dessert",
+    "name": "cherry pancake",
+    "price": 28,
+    "description": "pancake, sorbet, brown butter, puff pastry",
+    "img": "./assets/images/menu/dessert-10.jpg",
+    "lazyImg": "./assets/images/lazy/sure/dessert-10.jpg"
+  },
+  {
+    "id": 21,
+    "category": "dessert",
+    "name": "Basque cheesecake",
+    "price": 17,
+    "description": "Puff pastry, poached rhubarb, cheesecake mousse, vanilla ice-cream",
+    "img": "./assets/images/menu/blueee.jpeg",
+    "lazyImg": "./assets/images/lazy/sure/blueee.jpg"
+  }
+]

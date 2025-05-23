@@ -1,0 +1,544 @@
+:root {
+  --main-color: #b14b08;
+
+  --white-color: #fff;
+  --bg-color: #0e0d0a;
+  --body-color: #9b9999;
+  --section-padding: 70px;
+  --primary-font: "Oswald", sans-serif;
+  --main-font: "Cormorant Garamond", serif;
+  --header-font: "Great Vibes", cursive;
+}
+html {
+  font-size: 10px;
+}
+
+.reservation__cards {
+  margin: 3rem 0;
+  padding: 3rem 0;
+}
+
+.main__reservtion {
+  background-image: url(../images/bg/steakhouse-img-12.jpg);
+}
+.address__res {
+  background-image: url(../images/klara-kulikova-oB68s9qJ87Q-unsplash.jpg);
+}
+.opening__res {
+  background-image: url(../images/ali-choubin-GGAMO-CEEg-unsplash.jpg);
+}
+.form__res {
+  background-image: url(../images/shio-yang-RQYKAv-4F-U-unsplash.jpg);
+}
+
+.res__card {
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.res__card::after {
+  content: "";
+  inset: 0;
+  background-color: #0e0d0a;
+  position: absolute;
+  z-index: -1;
+  transition: all 1.5s;
+}
+.res__card:hover::after {
+  background-color: #0e0d0a7c;
+}
+
+.res__h3 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: var(--header-font);
+  padding: 2rem 0;
+  padding-top: 2rem;
+  margin: 2rem 0;
+}
+.address__openingHours__details {
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.address__openingHours__details h4 {
+  font-size: 2.2rem;
+
+  font-family: var(--primary-font);
+}
+.res__phones {
+  font-size: 2.4rem;
+}
+.resMap__btn a {
+  background-color: transparent;
+  color: var(--white-color);
+}
+.resMap__btn {
+  position: relative;
+  margin: 1rem 0;
+}
+.resMap__btn::after {
+  content: " ";
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0.8rem;
+  transition: all 1s;
+}
+.resMap__btn:hover::after {
+  width: 80%;
+}
+
+label {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--main-color);
+  font-family: var(--header-font);
+  font-size: 2.4rem;
+}
+input {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid lightgray !important;
+  color: var(--white-color) !important;
+  font-size: 1.8rem !important;
+
+  /* padding: 1.2rem 0; */
+}
+input:focus {
+  outline: none !important;
+}
+input span {
+  color: var(--white-color) !important;
+}
+
+.submit__btn {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  transition: all 1s;
+  margin: 2.8rem 0;
+}
+.res__card:hover .submit__btn {
+  background-color: var(--bg-color);
+}
+label {
+  transition: all 1s;
+}
+.res__card:hover label {
+  color: var(--white-color);
+}
+
+.date__div {
+  position: relative;
+}
+
+.calendar__container {
+  width: 100%;
+  background-color: #12121f;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s;
+  position: absolute;
+}
+
+.calendar {
+  width: 26rem;
+  height: 30rem;
+  background-color: #222227;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.month {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.month p {
+  font-size: 1.2rem;
+}
+.weekdays {
+  width: 100%;
+  height: 3rem;
+  padding: 0 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(24.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.1rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.1rem;
+  width: calc(20.2rem / 7);
+  height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  /* background-color: var(--main-color); */
+  cursor: pointer;
+}
+.date__input {
+  color: var(--white-color);
+  font-size: 1.8rem;
+}
+.res__time {
+  color: var(--white-color);
+  font-size: 1.8rem;
+}
+
+/* allAboutReservation */
+
+.show__res {
+  padding: 2.3rem;
+}
+.allAboutReservation {
+  margin: 3rem 0;
+  padding-bottom: 4rem;
+}
+
+.reservedUserName {
+  font-size: 4.8rem;
+  text-align: center;
+  color: var(--white-color);
+  margin: 2rem 0;
+  padding: 2.6rem 0;
+}
+
+.reservedUserName span {
+  color: var(--main-color);
+  animation-name: smallToBig;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+/* .reservation__display p {
+  font-size: 1.8rem;
+} */
+.reservation__display span {
+  color: var(--main-color);
+  font-size: 2.8rem;
+}
+.reservationMsg p {
+  font-size: 2.3rem;
+  color: #262626;
+}
+.reservationMsg span {
+  font-size: 1.5rem !important;
+}
+.all__details__txts p {
+  line-height: 2;
+}
+@keyframes smallToBig {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.reservedUserDetails,
+.reservedNumbers {
+  font-size: 3rem;
+  /* text-align: center; */
+  color: var(--white-color);
+}
+.reservedUserDetails p {
+  padding-bottom: 2rem;
+}
+.res-nonlogged {
+  width: 90%;
+  margin-left: auto;
+}
+
+.res-nonlogged p {
+  font-family: var(--main-font);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 3.2rem;
+  color: var(--white-color);
+}
+.res-nonlogged a {
+  color: var(--white-color);
+  background-color: var(--main-color);
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border: none;
+  transition: all 0.5s;
+  margin-bottom: 2rem;
+}
+.res-nonlogged a:hover {
+  background-color: #a1480d;
+}
+
+.reservation__footer {
+  margin-top: 7.7rem;
+}
+
+.reservation__footer h5 {
+  font-size: 2rem;
+}
+.reservation__footer img {
+  width: 100%;
+}
+
+/* allAboutReservation */
+
+/* start our place */
+.our__place {
+  margin: 4rem 0;
+  padding: 3rem 0;
+}
+
+.resBg {
+  height: 80vh;
+  background-image: url(.././images/bg/steakhouse-img-12.jpg);
+  position: relative;
+}
+.resBg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a81;
+  z-index: 1;
+}
+.sss {
+  width: 100%;
+}
+/* end our place */
+
+@media screen and (max-width: 1400px) {
+  .show__res {
+    padding: 1.3rem;
+  }
+  .res__h3 {
+    font-size: 2.6rem;
+  }
+  .address__openingHours__details {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  label {
+    font-size: 2.7rem;
+  }
+  .submit__btn__container {
+    padding-top: 0;
+  }
+  .submit__btn {
+    margin: 2.5rem 0;
+  }
+
+  .submit__btn .reservedUserName {
+    font-size: 4.3rem;
+  }
+
+  .reservedUserDetails,
+  .reservedNumbers,
+  .reservation__display span {
+    font-size: 2.6rem;
+  }
+  .reservedUserDetails p {
+    padding-bottom: 1rem;
+  }
+  .reservation__footer {
+    margin-top: 6.4rem;
+  }
+
+  .reservation__footer h5 {
+    font-size: 2.4rem;
+    padding-top: 2rem;
+  }
+  .res-nonlogged {
+    width: 100%;
+  }
+  #reservationPlaceholder {
+    padding: 0 !important;
+  }
+
+  .res-nonlogged p {
+    font-size: 3rem;
+    margin-top: -5.2rem;
+    margin-bottom: 0;
+  }
+  .res-nonlogged a {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .show__res {
+    padding: 0;
+    padding-left: 1.3rem;
+  }
+  .reservedUserName {
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+
+  .reservation__footer {
+    margin-top: 7.1rem;
+  }
+  .reservedUserDetails,
+  .reservedNumbers,
+  .reservation__display span {
+    font-size: 2.2rem;
+  }
+  .reservedUserDetails p {
+    padding-bottom: 1rem;
+  }
+  .res-nonlogged p {
+    font-size: 2.7rem;
+    margin-top: -4.4rem;
+    margin-bottom: 0;
+  }
+  .res-nonlogged a {
+    margin-top: -1rem;
+
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .show__res {
+    padding: 0;
+  }
+  .res__h3 {
+    font-size: 2.6rem;
+  }
+  .address__openingHours__details {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  label {
+    font-size: 2.6rem;
+  }
+  .submit__btn__container {
+    padding-top: 0;
+  }
+  .reservedUserName {
+    font-size: 4.3rem;
+  }
+
+  .reservedUserDetails,
+  .reservation__display span {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .reservation__footer {
+    margin-top: 4rem;
+  }
+
+  .reservation__footer h5 {
+    font-size: 2.4rem;
+    padding-top: 2rem;
+  }
+  .res-nonlogged p {
+    font-size: 3rem;
+    margin-top: -2rem;
+    margin-bottom: 0;
+  }
+  .res-nonlogged a {
+    margin-top: 0rem;
+
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reservedUserDetails,
+  .reservation__display span {
+    font-size: 2.4rem;
+  }
+  .reservation__footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .reservedUserName {
+    font-size: 3.5rem;
+  }
+  .reservation__display span {
+    font-size: 3rem;
+  }
+  .reservedUserDetails,
+  .reservedNumbers,
+  .reservation__display span {
+    font-size: 2.2rem;
+  }
+  .reservation__footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reservation__footer h5 {
+    font-size: 2rem;
+  }
+}

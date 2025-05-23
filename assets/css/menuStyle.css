@@ -1,0 +1,292 @@
+/* start  the  main menu */
+.the__main__menu {
+  margin-bottom: 4rem;
+}
+.header__menu__bg {
+  background-image: url(../images/seaff.jpeg);
+  background-image: url(../images/menu/beef.jfif);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.header__menu__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a67;
+  z-index: -1;
+}
+.header__menu__bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__menu__bg .h1 {
+  color: var(--white-color);
+  font-family: var(--main-font);
+}
+/* start  the  main menu */
+
+/*  */
+
+.border__b {
+  border-bottom: 1px solid var(--main-color);
+}
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(40px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.lazy-img {
+  filter: blur(6px);
+  opacity: 0.6;
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+.lazy-img.loaded {
+  filter: blur(0);
+  opacity: 1;
+}
+
+.menu__img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.menu__title {
+  text-align: center;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  padding: 3rem 0;
+  font-family: var(--main-font);
+  font-size: 3rem;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
+.menu__des {
+  padding: 3rem;
+}
+.food__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__content {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-style: italic;
+}
+.cart__btn {
+  background-color: transparent !important;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  /* padding: 2rem; */
+  font-size: 2rem;
+  z-index: 2;
+}
+.cart__btn {
+  color: var(--main-color);
+}
+
+.food__description p {
+  font-size: 1.4rem;
+  color: var(--white-color);
+}
+
+/*  */
+
+/* start asian header  */
+
+.asianBg {
+  background-image: url(../images/ahtziri-lagarde-BM8-NSCj9yA-unsplash-1920x1280-1.jpg);
+  z-index: 1;
+}
+
+.header-intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0e0d0a83;
+  z-index: -1;
+}
+
+.asianBg h5 {
+  color: var(--white-color);
+}
+
+/* end asian header  */
+
+/* start dessert header  */
+
+.dessertBg {
+  background-image: url(../images/food-new/Chocolate\ Covered\ Strawberry\ Cake.jfif);
+  background-image: url(../images/Chocolate\ waffles\ s.png);
+  position: relative;
+}
+.dessertBg::after {
+  content: "";
+  inset: 0;
+  background-color: #0e0d0a78;
+  z-index: 2;
+}
+/* end dessert header  */
+
+/* start notificatin section */
+.notification {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+.notification__card {
+  height: 80vh;
+  width: 300px;
+  background-color: #0e0d0ad7;
+  margin: auto 0;
+  transform: translateX(300px);
+  transition: all 3s;
+  text-align: center;
+}
+.notification__img {
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notification__img img {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+}
+.notification__plusOne {
+  font-size: 4rem;
+}
+.notification__details {
+  font-size: 2.4rem;
+  color: var(--white-color);
+  font-weight: bold;
+}
+.notification__des {
+  font-size: 1.4rem;
+}
+.added__cart p {
+  font-size: 1.8rem;
+}
+.added__cart span {
+  font-size: 3.6rem;
+  color: var(--main-color);
+}
+
+/* end notificatin section */
+@media screen and (max-width: 1200px) {
+  .menu__img {
+    width: 250px;
+    height: 250px;
+  }
+  .menu__des .menu__line {
+    width: 30%;
+  }
+  .menu__content {
+    font-size: 3.5rem;
+  }
+  .cart__btn {
+    font-size: 3.5rem;
+  }
+
+  .food__description p {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu__img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .menu__des .menu__line {
+    width: 20%;
+  }
+  .menu__content {
+    font-size: 2.5rem;
+  }
+  .cart__btn {
+    font-size: 2.5rem;
+  }
+
+  .food__description p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu__img {
+    width: 200px;
+    height: 200px;
+  }
+  .menu__des .menu__line {
+    width: 10%;
+  }
+  .menu__content {
+    font-size: 2rem;
+  }
+  .cart__btn {
+    font-size: 2rem;
+  }
+
+  .food__description p {
+    font-size: 1.6rem;
+  }
+  .notification__card {
+    width: 230px;
+
+    transform: translateX(200px);
+  }
+  .notification__img {
+    height: 45%;
+  }
+  .notification__img img {
+    height: 70%;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu__img__div {
+    display: flex;
+    justify-content: center;
+  }
+  .food__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menu__des .menu__line {
+    width: 30%;
+  }
+  .menu__content {
+    font-size: 2.8rem;
+  }
+  .cart__btn {
+    font-size: 2.8rem;
+  }
+  .notification__card {
+    width: 210px;
+  }
+
+  .food__description p {
+    font-size: 2.2rem;
+  }
+}

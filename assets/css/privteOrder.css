@@ -1,0 +1,107 @@
+.main__private {
+  background-image: url(../images/bg/pri.jpg);
+}
+
+/* start book an event */
+.book__event {
+  margin: 4rem 0;
+  padding: 4rem 0;
+  color: var(--white-color);
+}
+.book__event__content {
+  text-align: center;
+}
+.book__event__content h2 {
+  font-size: 5rem;
+}
+.book__event__content p {
+  padding: 2rem 0;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+.book__event__btn {
+  border: 2px solid var(--main-color);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  border-radius: 2px;
+}
+.book__event__btn a {
+  color: var(--main-color);
+}
+/* end book an event */
+/* start main dining room */
+.dining__room,
+.royal__room,
+.TROPHY {
+  margin: 5rem 0;
+  padding: 5rem 0;
+  color: var(--white-color);
+}
+.room {
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+.dining__room__img {
+  background-image: url(../images/bg/igro.jpg);
+}
+.royal__room__img {
+  background-image: url(../images/bg/zak.jpg);
+}
+.TROPHY__room__img {
+  background-image: url(../images/bg/rand.jpg);
+}
+.dining__title__mini {
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.dining__main__title {
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+.dining__main__txt {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+ul {
+  padding-left: 0;
+  padding-top: 0.9rem;
+}
+.dining__main__list li {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.dining__main__list span {
+  color: var(--main-color);
+}
+.dining__main__list p {
+  font-size: 1.6rem;
+}
+
+/* end main dining room */
+.privateBg {
+  background-image: url(../images/bg/nikkito\ on\ Instagram_\ “@rest_orana_\ 🍂”.jfif);
+}
+@media screen and (max-width: 992px) {
+  .dining__title__mini,
+  .dining__main__title,
+  .dining__main__txt,
+  .dining__main__list ul li {
+    text-align: center;
+  }
+  .room__list__div {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* display: none; */
+  }
+}

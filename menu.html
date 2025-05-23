@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--google font Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css" />
+    <!-- wow link -->
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <!-- google font icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- styling link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/menuStyle.css" />
+    <link rel="stylesheet" href="./assets/css/res.css" />
+
+    <title>foodinfin</title>
+  </head>
+  <body>
+    <!-- start nav section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">foodinfin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu__link" href="./menu.html">menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./res.html">reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./privateOrders.html">Private Dining</a>
+            </li>
+          </ul>
+          <div class="right__sec__nav">
+            <p class="userNameTitle"></p>
+            <button class="btn">
+              <a href="./cart.html">your cart</a>
+              <span class="material-symbols-outlined"> shopping_cart </span>
+              <span class="cart__badge">1</span>
+            </button>
+            <button class="login__btn btn">
+              <a href=""></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav section -->
+
+    <!-- start main all the menu -->
+    <section class="the__main__menu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="header__menu__bg filtered__menu__bg main">
+            <h1 class="h1 main__p">our menu</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main all the menu -->
+
+    <!-- start steak category section -->
+    <section class="steak__category">
+      <div class="container">
+        <div class="row wow fadeInUp">
+          <h2 class="menu__title">STEAK & CHOPS</h2>
+          <div class="row steak__filtered__items"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end steak category section  -->
+    <!-- start asian header -->
+    <section class="asian">
+      <div class="asian__header">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="header-intro asianBg">
+              <!-- <span class="tit2 p-l-15 p-r-15"> Discover </span> -->
+              <h5>asian menu</h5>
+            </div>
+          </div>
+        </div>
+        <div class="asian__category">
+          <div class="container">
+            <div class="row wow fadeInUp">
+              <h2 class="menu__title">ASIAN & CHOPS</h2>
+              <div class="row asian__filtered__items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end asian header -->
+    <!-- start steak category section -->
+
+    <!-- end steak category section  -->
+
+    <!-- start asian header -->
+    <section class="dessert">
+      <div class="dessert__header">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="header-intro dessertBg">
+              <!-- <span class="tit2 p-l-15 p-r-15"> Discover </span> -->
+              <h5>dessert menu</h5>
+            </div>
+          </div>
+        </div>
+        <div class="dessert__category">
+          <div class="container">
+            <div class="row wow fadeInUp">
+              <h2 class="menu__title">DESSERT MENU</h2>
+              <div class="row dessert__filtered__items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay d__flex d-none">
+        <div class="msg__container d__flex reservation__msg">
+          <p>you must login first</p>
+
+          <div class="btns__container">
+            <button class="btn">
+              <a href="./login.html">login</a>
+            </button>
+            <button class="btn close__reservtion__btn">close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end asian header -->
+
+    <!-- start notificatin section -->
+    <section class="notification">
+      <div class="notification__container">
+        <div class="notification__card">
+          <div class="notification__img"></div>
+          <div class="notification__details p-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end notificatin section  -->
+    <!-- start foodinfin  place  -->
+    <section class="foodinfin__place">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="header-intro foodinfin__place__bg">
+            <!-- <span class="tit2 p-l-15 p-r-15"> Discover </span> -->
+            <h5>foodinfin</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end  foodinfin  place-->
+
+    <footer>
+      <div class="final-footer">
+        <div class="footer-logo">
+          <img src="./assets/images/bg/logo.png" alt="" />
+        </div>
+        <p class="footer-p">Copyright 2017. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./assets/js/menu.js" type="module"></script>
+  </body>
+</html>

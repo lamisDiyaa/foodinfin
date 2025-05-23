@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--google font Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css" />
+
+    <!-- styling link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>foodinfin</title>
+  </head>
+  <body>
+    <!-- start nav section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">foodinfin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./res.html">reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./privateOrders.html">Private Dining</a>
+            </li>
+          </ul>
+          <div class="right__sec__nav">
+            <p class="userNameTitle"></p>
+            <button class="btn">
+              <a href="./cart.html">your cart</a>
+              <span class="material-symbols-outlined"> shopping_cart </span>
+              <span class="cart__badge">1</span>
+            </button>
+            <button class="login__btn btn">
+              <a href=""></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav section -->
+    <!-- start main section -->
+    <section class="main__section main__home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1
+              class="h1 wow fadeInDown"
+              data-wow-iteration="100"
+              data-wow-delay="0s"
+              data-wow-duration="4s"
+            >
+              foodinfin
+            </h1>
+            <!-- <p  class="wow flipInX"data-wow-iteration="100" data-wow-duration="4s">Best Resturant</p> -->
+            <p class="main__p">Best Resturant</p>
+            <div class="main__btns">
+              <button class="btn reserve__btn">
+                <a href="./res.html">reservations</a>
+              </button>
+              <button class="btn menu__btn">
+                <a href="./menu.html">view menu</a>
+              </button>
+
+              <!-- <img src="./assets/images/benefits-carousel-1.jpg" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main section -->
+    <!-- start our history section -->
+    <section class="our__history">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 our__history__txt wow fadeInLeft">
+            <p>
+              <span>foodinfin</span><br />
+              <br />founded in 2022 , is dedicated to all those who love to
+              wander far and wide. We invite you on a wholesome culinary
+              adventure, where you’ll explore undiscovered gourmet experiences.
+              Thank you for creating lasting memories with us.
+            </p>
+          </div>
+          <div class="col-lg-6 wow fadeInRight d-flex justify-content-center">
+            <img
+              src="./assets/images/mario-mesaglio-7BZzlV0Z9R4-unsplash-780x520 (1).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our history section -->
+
+    <!-- start our services -->
+    <section class="our__services">
+      <div class="container-lg">
+        <h2 class="our__services__h2">Our Services</h2>
+        <div class="row">
+          <div class="col-lg-4 services__card">
+            <div class="services__icons">
+              <span class="material-symbols-outlined"> celebration </span>
+            </div>
+            <h3 class="our__services__h3">Birthday Party</h3>
+            <p class="our__services__p">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+          <div class="col-lg-4 services__card">
+            <div class="services__icons">
+              <span class="material-symbols-outlined"> partner_exchange </span>
+            </div>
+            <h3 class="our__services__h3">Business Meetings</h3>
+            <p class="our__services__p">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+          <div class="col-lg-4 services__card">
+            <div class="services__icons">
+              <span class="material-symbols-outlined"> favorite </span>
+            </div>
+            <h3 class="our__services__h3">Wedding Party</h3>
+            <p class="our__services__p">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our services -->
+    <!-- start selected menu -->
+    <section class="selected__menu">
+      <div class="container-fluid">
+        <div class="selected__menu__bg">
+          <div class="row justify-content-around">
+            <div class="col-md-4">
+              <div class="menu__card lunch__special__left">
+                <h3>LUNCH SPECIAL</h3>
+                <div class="menu__div">
+                  <p class="menu__txt">Salmon Sashimi</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$26</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">Yellow Tail Sashimi</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$21</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">The Izakaya Oyster</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$12</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">Grilled Mackerel</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$16</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">Thick Fried Tofu</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$10</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 lunch__special__right">
+              <div class="menu__card">
+                <h3>DINNER SPECIAL</h3>
+                <div class="menu__div">
+                  <p class="menu__txt">Fried Smelt</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$8</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">Grilled Mackerel</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$18</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">Parmigiano Ramen</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$18</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">Sake Steamed</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$16</p>
+                </div>
+                <div class="menu__div">
+                  <p class="menu__txt">Fried Lotus</p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end selected menu -->
+    <!-- start all menu -->
+    <section class="all__menu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 all__menu__card">
+            <img
+              src="./assets/images/cody-chan-FyerbLWRr2M-unsplash-780x1170.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 all__menu__card__txt">
+            <h3 class="all__menu__header">foodinfin</h3>
+            <p class="full__menus">View Full Menus</p>
+            <p class="full__menus__description">
+              We serve food, harmony, and laughter.<br />
+              Making delicious food and providing<br />
+              a wonderful eating experience.
+            </p>
+            <button class="btn">
+              <a href="./menu.html" class="menus__btn">all menus</a>
+            </button>
+          </div>
+          <div class="col-md-4 all__menu__card">
+            <img
+              src="./assets/images/mae-mu-GFhqNX1gE9E-unsplash-780x1170.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end all menu -->
+
+    <!-- start filltered menus -->
+    <section class="filtered__menus">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-4 steak__card__container">
+            <div class="filtered__cards steak__card"></div>
+          </div>
+          <div class="col-md-4 asian__card__container">
+            <div class="filtered__cards asian__card"></div>
+          </div>
+          <div class="col-md-4 desserts__card__container">
+            <div class="filtered__cards desserts__card"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end filltered menus -->
+    <!--start happy customers -->
+    <section class="happy__customers">
+      <div class="happy__customer__bg">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="happy__customr__card">
+                <span class="material-symbols-outlined customers">
+                  sentiment_satisfied
+                </span>
+                <p class="customer__numbers customers">4680</p>
+                <p class="customer__status customers">Happy Customers</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="happy__customr__card">
+                <span class="material-symbols-outlined customers">
+                  lunch_dining
+                </span>
+                <p class="customer__numbers customers">860</p>
+                <p class="customer__status customers">Dishes Served</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="happy__customr__card">
+                <span class="material-symbols-outlined customers">
+                  water_full
+                </span>
+                <p class="customer__numbers customers">500</p>
+                <p class="customer__status customers">Juices</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="happy__customr__card">
+                <span class="material-symbols-outlined customers">
+                  ramen_dining
+                </span>
+                <p class="customer__numbers customers">1300</p>
+                <p class="customer__status customers">Cup Of Coffees</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end happy customers -->
+
+    <!--start OPENING HOURS -->
+    <section class="all__details">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-7 all__details__txts">
+            <div class="reservation__parking__opening__Hours">
+              <div class="opening__Hours">
+                <h4>OPENING HOURS</h4>
+                <p>
+                  Lunch: Monday – Friday 12 pm to 3:30 pm<br />
+                  Dinner: Monday – Saturday 4 pm to 11 pm<br />
+                  Dinner: Sunday 4 pm to 10 pm
+                </p>
+              </div>
+              <div class="dining">
+                <h4>DINING</h4>
+                <p>
+                  indoor Dining & Heated Outdoor Patios<br />
+                  Private Rooms & Terrace
+                </p>
+              </div>
+            </div>
+            <div class="reservation__parking__opening__Hours">
+              <div class="reservation">
+                <h4>RESERVATION</h4>
+                <p>
+                  Call (212) 555-6767<br />
+                  Email foodinfin@gmail.com
+                </p>
+              </div>
+              <div class="Dress__Attire">
+                <h4>Dress Attire</h4>
+                <p>
+                  Guests are welcome in a variety of attire<br />
+                  from elegant casual to business suits.<br />
+                  Shorts are accepted, but discouraged.
+                </p>
+              </div>
+            </div>
+            <div class="reservation__parking__opening__Hours">
+              <div>
+                <h4>PARKING DETAILS</h4>
+                <p>
+                  Street Parking after 7:00pm<br />
+                  Monday to Saturday, feed the meter.<br />
+                  Sunday free street parking.
+                </p>
+              </div>
+              <div>
+                <h4>PUBLIC TRANSIT</h4>
+                <p>
+                  Walking Distance from Penn Station 34th<br />
+                  Street Herald Square: B,D,F,M & N,Q,R <br />33rd street
+                  station 4,6.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 all__details__imgs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--end OPENING HOURS -->
+    <!-- start find us -->
+    <section class="find__us">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-6 find__us__img">
+            <!-- <img src="./assets/images/image_3.jpg" alt=""> -->
+          </div>
+          <div class="col-lg-6 find__us__txt">
+            <h4 class="find__us_title">Find Us</h4>
+            <p class="where">where</p>
+            <p class="address">
+              42511 Port Said,<br />
+              Atef El-Sadat Street Madînet, Portsaid
+            </p>
+            <div class="find__us__btns">
+              <button class="btn viewMap__btn">
+                <a href="https://goo.gl/maps/hthFXbdPyaY6fyTy6">view map</a>
+              </button>
+              <button class="btn bookTable__btn">
+                <a href="./res.html">book a table</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end find us -->
+    <!-- start foodinfin  place  -->
+    <section class="foodinfin__place">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="header-intro foodinfin__place__bg">
+            <!-- <span class="tit2 p-l-15 p-r-15"> Discover </span> -->
+            <h5>foodinfin</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end  foodinfin  place-->
+
+    <footer>
+      <div class="final-footer">
+        <div class="footer-logo">
+          <img src="./assets/images/bg/logo.png" alt="" />
+        </div>
+        <p class="footer-p">Copyright 2017. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+
+    <script src="./assets/js/app.js" type="module"></script>
+  </body>
+</html>
