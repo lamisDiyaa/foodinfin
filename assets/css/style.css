@@ -901,8 +901,14 @@ span::selection {
     left: 22.5%;
     top: 100%;
   }
+  .msg__container {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 992px) {
+  body {
+    background-color: red;
+  }
   .navbar-toggler {
     color: #fff !important;
     background-color: #fff !important;
@@ -964,6 +970,10 @@ span::selection {
   }
   .menu__line {
     width: 12%;
+  }
+  .msg__container {
+    width: 500px;
+    color: red;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1039,6 +1049,10 @@ span::selection {
   .menu__div {
     justify-content: space-around;
   }
+  .msg__container {
+    width: 450px;
+    color: rgb(0, 255, 85);
+  }
 }
 /* @media only screen and (max-width: 576px) */
 @media only screen and (max-width: 576px) {
@@ -1104,5 +1118,9 @@ span::selection {
   }
   .happy__customers {
     display: none;
+  }
+  .msg__container {
+    width: 400px;
+    color: rgb(255, 0, 179);
   }
 }
