@@ -173,7 +173,11 @@
     display: none;
   }
   .wrapper {
+<<<<<<< HEAD
     width: 60%;
+=======
+    width: 65%;
+>>>>>>> 81b450bdaba4573ae9b082fc513d03e0584e18d5
   }
 }
 
