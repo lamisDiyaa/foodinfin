@@ -271,6 +271,7 @@ span::selection {
   inset: 0;
   background-color: #0e0d0a39;
   z-index: 2;
+  pointer-events: none;
 }
 
 .h1 {
@@ -317,6 +318,8 @@ span::selection {
   border: 2px solid var(--white-color);
   margin-left: 1rem;
   transition: all 0.3s;
+  z-index: 1000;
+  cursor: pointer !important;
 }
 .main__btns a {
   color: var(--white-color);
@@ -901,6 +904,9 @@ span::selection {
     left: 22.5%;
     top: 100%;
   }
+  .msg__container {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 992px) {
   .navbar-toggler {
@@ -964,6 +970,9 @@ span::selection {
   }
   .menu__line {
     width: 12%;
+  }
+  .msg__container {
+    width: 500px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1039,6 +1048,9 @@ span::selection {
   .menu__div {
     justify-content: space-around;
   }
+  .msg__container {
+    width: 450px;
+  }
 }
 /* @media only screen and (max-width: 576px) */
 @media only screen and (max-width: 576px) {
@@ -1104,5 +1116,8 @@ span::selection {
   }
   .happy__customers {
     display: none;
+  }
+  .msg__container {
+    width: 400px;
   }
 }

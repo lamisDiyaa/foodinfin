@@ -172,6 +172,9 @@
   .display img {
     display: none;
   }
+  .wrapper {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -179,7 +182,7 @@
     font-size: 1rem;
   }
   .display th {
-    padding: 1.2rem;
+    padding: 1rem;
     color: var(--main-color);
     font-size: 1rem;
   }
