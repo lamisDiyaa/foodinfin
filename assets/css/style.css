@@ -906,9 +906,6 @@ span::selection {
   }
 }
 @media screen and (max-width: 992px) {
-  body {
-    background-color: red;
-  }
   .navbar-toggler {
     color: #fff !important;
     background-color: #fff !important;
@@ -973,7 +970,6 @@ span::selection {
   }
   .msg__container {
     width: 500px;
-    color: red;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1051,7 +1047,6 @@ span::selection {
   }
   .msg__container {
     width: 450px;
-    color: rgb(0, 255, 85);
   }
 }
 /* @media only screen and (max-width: 576px) */
@@ -1121,6 +1116,5 @@ span::selection {
   }
   .msg__container {
     width: 400px;
-    color: rgb(255, 0, 179);
   }
 }
